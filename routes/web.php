@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::view('terms-conditions','components.contracts.terms');
+Route::view('privacy-policy','components.contracts.privacy');
+Route::view('acceptable-use-policy','components.contracts.acceptable');
+
+Route::view('contract','components.contract');
+Route::view('teams','components.teams');
+Route::view('services','components.services');
