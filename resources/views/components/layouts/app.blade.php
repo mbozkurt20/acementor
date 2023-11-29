@@ -23,11 +23,35 @@
 
 <x-layouts.header/>
 
-@yield('content')
+<div class="custom-cursor">
+    @yield('content')
+</div>
+
+
 
 <x-layouts.footer/>
 
+<script>
 
+    var $cursor = $('.cursor');
+
+    function moveCursor(e) {
+        $cursor.addClass('is-moving');
+
+        TweenLite.to($cursor, 0.23, {
+            left: e.pageX,
+            top: e.pageY,
+            ease: Power4.easOut
+        });
+
+        clearTimeout(timer);
+
+        var timer = setTimeout(function() {
+            $cursor.removeClass('is-moving');
+        }, 300);
+    }
+    $(window).on('mousemove', moveCursor);
+</script>
 <!--====== Jquery js ======-->
 <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
 <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>

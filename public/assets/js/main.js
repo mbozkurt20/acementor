@@ -375,10 +375,98 @@ $(function () {
         },
         "retina_detect": !0
     });
-
-
-
-
-
-
 });
+
+function formatNumber(number) {
+    const suffixes = ["", "K", "M", "B", "T"];
+    let suffixIndex = 0;
+
+    while (number >= 1000 && suffixIndex < suffixes.length - 1) {
+        number /= 1000;
+        suffixIndex++;
+    }
+
+    // Özel durum: Milyon (M) için sadece sayıyı göster, ondalık kısmı sıfır ise ondalık kısmı gösterme
+    const formattedNumber = suffixIndex === 2 ? number.toFixed(number % 1 === 0 ? 0 : 1) : number.toFixed(1);
+
+    return formattedNumber + suffixes[suffixIndex]+'+';
+}
+
+function animateAndFormatCounter(targetNumber, duration) {
+    const counterElement = document.getElementById('counter');
+    const startNumber = 0;
+    const frameDuration = 1000 / 60;
+    const totalFrames = Math.ceil(duration / frameDuration);
+    const increment = (targetNumber - startNumber) / totalFrames;
+
+    let currentFrame = 0;
+    let currentValue = startNumber;
+
+    function updateCounter() {
+        currentFrame++;
+        currentValue += increment;
+        counterElement.textContent = formatNumber(currentValue);
+
+        if (currentFrame < totalFrames) {
+            requestAnimationFrame(updateCounter);
+        }
+    }
+
+    updateCounter();
+}
+
+const targetNumber = 2000000; // 2M
+const animationDuration = 3000;
+
+animateAndFormatCounter(targetNumber, animationDuration);
+
+// daily amount
+function getDailyAmount(timestamp) {
+    const dailyIncrement = 10; // Her gün eklenen para miktarı
+
+    const startDate = new Date('2023-01-05'); // Başlangıç tarihi
+    const currentDate = new Date(timestamp);
+
+    const daysPassed = Math.floor((currentDate) / (24 * 60 * 60 * 1000)) % 1000;
+    const dailyAmount = daysPassed * dailyIncrement;
+
+    console.log({dailyAmount:dailyAmount})
+    console.log({timestamp:timestamp})
+    console.log(dailyAmount)
+    return dailyAmount;
+}
+
+function animateDailyAmount(targetAmount, duration) {
+    const dailyAmountElement = document.getElementById('dailyAmount');
+    const startAmount = 0;
+    const frameDuration = 1000 / 60;
+    const totalFrames = Math.ceil(duration / frameDuration);
+    const increment = (targetAmount - startAmount) / totalFrames;
+
+    let currentFrame = 0;
+    let currentAmount = startAmount;
+
+    function updateAmount() {
+        currentFrame++;
+        currentAmount += increment;
+        dailyAmountElement.textContent = Math.round(currentAmount / 100) / 10;
+
+        if (currentFrame < totalFrames) {
+            requestAnimationFrame(updateAmount);
+        }
+    }
+
+    updateAmount();
+}
+
+function updateDailyAmount() {
+    const currentDate = new Date();
+    const timestamp = currentDate.setHours(0, 0, 0, 0); // Günün başlangıcını al
+    const targetAmount = getDailyAmount(timestamp);
+
+    animateDailyAmount(targetAmount, 3000); // 1000 milisaniye (1 saniye) süresince animasyonlu artış
+}
+
+setInterval(updateDailyAmount, 86400000); // 24 saat (1 gün) = 24 * 60 * 60 * 1000 milisaniye
+
+updateDailyAmount(); // İlk yüklenme sırasında da güncelleme yapalım.

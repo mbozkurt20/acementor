@@ -6,7 +6,7 @@
                 <div class="col-lg-10">
                     <div class="section-title text-center pb-40">
                         <div class="line m-auto"></div>
-                        <h3 class="title">Acceptable Use Policy</h3>
+                        <h3 class="title">KVKK</h3>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->

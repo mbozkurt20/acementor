@@ -1,9 +1,12 @@
 @extends('components.layouts.app')
 @section('content')
 <x-promotion/>
+<x-bar/>
+<x-service-step/>
 <x-services/>
 <x-deals/>
 <x-student-review/>
+<x-package/>
 <x-comments/>
 <x-consultant-videos/>
 <x-FrequentlyAskedQuestions/>

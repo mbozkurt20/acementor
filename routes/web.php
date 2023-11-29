@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('cache',function (){
+   \Illuminate\Support\Facades\Artisan::call('config:clear');
+   \Illuminate\Support\Facades\Artisan::call('cache:clear');
+   \Illuminate\Support\Facades\Artisan::call('key:generate');
+});
 
 Route::view('terms-conditions','components.contracts.terms');
 Route::view('privacy-policy','components.contracts.privacy');
