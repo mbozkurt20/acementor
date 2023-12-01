@@ -9,7 +9,7 @@
             </div>
         </div> <!-- row -->
         <div class="container" data-wow-duration="1s" data-wow-delay="0.8s">
-            <div class="calendly-inline-widget" data-url="https://calendly.com/mbozkurt020" style="min-width:320px;height:650px;"></div>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/mbozkurt020" style="min-width:320px;height:700px;"></div>
 
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
         </div> <!-- row -->
