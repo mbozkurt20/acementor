@@ -12,10 +12,6 @@
             <div class="calendly-inline-widget" data-url="https://calendly.com/mbozkurt020" style="min-width:320px;height:650px;"></div>
 
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-
-            <style>
-
-            </style>
         </div> <!-- row -->
     </div> <!-- container -->
 </section>
