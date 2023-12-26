@@ -1,4 +1,5 @@
-<section id="service-step" class="pb-120">
+<section id="service-step" class="pb-120" >
+    <div id="mouseEffect"></div>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -19,14 +20,14 @@
             <div class="col-lg-12">
                 <div class="header-hero-image text-center wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1.4s">
                     <div class="video-content wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <img class="dots" src="assets/images/dots.svg" alt="dots">
+{{--                        <img class="dots" src="assets/images/dots.svg" alt="dots">--}}
                         <div class="video-wrapper">
                             <div class="video-image">
                                 <img src="assets/images/video.png" alt="video">
                             </div>
                             <div class="video-icon">
                                 <a href="https://www.youtube.com/watch?v=r44RKWyfcFw" class="video-popup"><i
-                                        class="lni-play"></i></a>
+                                            class="lni-play"></i></a>
                             </div>
                         </div> <!-- video wrapper -->
                     </div> <!-- video content -->
@@ -36,24 +37,25 @@
         </div> <!-- row -->
 
         <div class="row mt-5">
-              <div class="col-9">
-                 <div class="float-right mt-2 mr-5">
-                     <button class="p-3 w-100 bg-grey text-yellow rounded btn-hover-yellow">I Want To Save My Spot</button>
-                     <span class="text-grey mt-4">Join our <span class="text-white">15,000+</span> students worldwide</span>
-                 </div>
-              </div>
-             <div class="col-3">
-                 <div class="float-left">
-                     <div class="size-md text-white" id="counter">0</div>
-                     <span>Aktif Users</span>
-                 </div>
+            <div class="col-9">
+                <div class="float-right mt-2 mr-5">
+                    <button style="border-radius: 22px" class="p-3 w-100 bg-button text-white zoom">I Want To Save My Spot</button>
+                    <span class="text-grey mt-4">Join our <span class="text-white">15,000+</span> students worldwide</span>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="float-left">
+                    <div class="size-md text-white" id="counter">0</div>
+                    <span class="text-grey">Aktif Users</span>
+                </div>
 
                 <div class="float-right">
                     <div class="size-md text-white" id="dailyAmount">Loading...</div>
-                    <span>Kazanç</span>
+                    <span class="text-grey">Kazanç</span>
                 </div>
 
-          </div>
+            </div>
 
-    </div> <!-- container -->
+        </div> <!-- container -->
+    </div>
 </section>

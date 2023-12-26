@@ -9,7 +9,7 @@
             </div>
         </div> <!-- row -->
         <div class="row testimonial-active wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.8s">
-            <div class="col-lg-4">
+            <div class="col-lg-4 zoom">
                 <div class="single-testimonial">
                     <div class="testimonial-review d-flex align-items-center justify-content-between">
 
@@ -38,7 +38,7 @@
                     </div>
                 </div> <!-- single testimonial -->
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 zoom">
                 <div class="single-testimonial">
                     <div class="testimonial-review d-flex align-items-center justify-content-between">
 
@@ -67,7 +67,7 @@
                     </div>
                 </div> <!-- single testimonial -->
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 zoom">
                 <div class="single-testimonial">
                     <div class="testimonial-review d-flex align-items-center justify-content-between">
 

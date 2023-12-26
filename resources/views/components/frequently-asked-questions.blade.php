@@ -14,14 +14,14 @@
                     <div class="p-2 ml-5" id="headingOne-{{$frequent['id']}}">
                         <h5 class="mb-0">
                             <a class="text-dark" href="#" data-toggle="collapse" data-target="#collapseOne-{{$frequent['id']}}" aria-expanded="true" aria-controls="collapseOne">
-                                {{$frequent['title']}}
+                              <span style="font-family: Apple">  {{$frequent['title']}}</span>
                             </a>
                         </h5>
                     </div>
 
                     <div id="collapseOne-{{$frequent['id']}}" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
-                            {{$frequent['body']}}
+                           <i> {{$frequent['body']}}</i>
                         </div>
                     </div>
                 </div>

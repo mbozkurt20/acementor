@@ -9,6 +9,6 @@
 <x-package/>
 <x-comments/>
 <x-consultant-videos/>
-<x-calendly></x-calendly>
+<x-calendly/>
 <x-FrequentlyAskedQuestions/>
 @endsection

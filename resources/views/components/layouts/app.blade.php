@@ -23,11 +23,11 @@
 </div>
 
 
-<x-layouts.header/>
-
+<div style="background-color: #030A19">
+    <x-layouts.header/>
     @yield('content')
-
-<x-layouts.footer/>
+    <x-layouts.footer/>
+</div>
 
 <!--====== Jquery js ======-->
 <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>

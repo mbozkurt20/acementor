@@ -10,7 +10,7 @@
         </div> <!-- row -->
         <div class="row" data-wow-duration="1s" data-wow-delay="0.8s">
             <div class="col-5">
-                <div class="border border-yellow text-center p-3">
+                <div class="ty border border-yellow text-center p-3">
                    <div class="text-center">
                        <h4 class="text-white mt-4">Temel Yıldız</h4>
                        <p class="mt-4 px-4 text-white">Amazon Online Arbitrage <br> Uzmanlık Rehberi</p>
@@ -26,12 +26,12 @@
                         <p class="text-grey font-weight-bold mb-5"><i class="mr-3 float-left fa fa-check text-yellow"></i> Hafta içi 12:00-20:00 Arasında İstediğin Vakite Uygun Birebir Eğitim</p>
                     </div>
 
-                    <button class="p-2 px-5 text-centert bg-grey text-yellow rounded btn-hover-yellow"><strong>Satın Al</strong></button>
+                    <button class="p-2 px-5 text-centert rounded btn-hover-yellow"><strong>Satın Al</strong></button>
                 </div>
             </div>
             <div class="col-1"></div>
             <div class="col-5">
-                <div class="border border-yellow text-center p-3">
+                <div class="ty border border-yellow text-center p-3">
                    <div class="text-center">
                        <h4 class="text-white mt-4">Evrim Aşaması</h4>
                        <p class="mt-4 px-4 text-white">Wholesale Avantajıyla Amazon'da <br> Bir Adım Öne Çıkın.</p>
@@ -47,10 +47,22 @@
                         <p class="text-grey font-weight-bold mb-4"><i class="mr-3 float-left fa fa-check text-yellow"></i> İş Ortaklığı Yaptığımız Depolarla Hızlı ve Etkili Süreç Yönetimi </p>
                     </div>
 
-                    <button class="p-2 px-5 text-centert bg-grey text-yellow rounded btn-hover-yellow"><strong>Satın Al</strong></button>
+                    <button class="p-2 px-5 text-centert rounded btn-hover-yellow"><strong>Satın Al</strong></button>
                 </div>
             </div>
         </div> <!-- row -->
     </div> <!-- container -->
 </section>
 
+<style>
+    .ty {
+        box-shadow: 1px 1px 20px 10px #1D64EF;
+    }
+
+    .ty:hover {
+        rotate: 1deg;
+        box-shadow: 1px 1px 20px 10px #E0507A;
+        transform: scale(1.1); /* 1.1 kat büyüt */
+        transition: transform 0.9s ease;
+    }
+</style>

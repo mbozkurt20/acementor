@@ -21,4 +21,11 @@
             </div>
         </div>   <!-- row -->
     </div> <!-- container -->
+
+    <style>
+        .single-logo:hover{
+            box-shadow: 1px 2px 3px 4px white;;
+            border-radius: 20px;
+        }
+    </style>
 </div>

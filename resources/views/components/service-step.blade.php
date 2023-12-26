@@ -14,14 +14,14 @@
                     <!-- start experience section-->
                     <div class="timeline">
                         <div class="icon">
-                            <strong class="position-absolute mt-2 font-weight-bold">01</strong>
+                            <h4 class="position-absolute text-light mt-2 font-weight-bold">01</h4>
                         </div>
                         <div class="date-content">
-                            <img height="350" src="assets/images/ilistrator/about-image2-1.png" alt="">
+                            <img height="350" src="assets/images/ilistrator/tax3.webp" alt="">
                         </div>
                         <div class="timeline-content">
                             <h5 class="title">Şirket ve Muhasebe</h5>
-                            <p class="description">
+                            <p class="description2">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum                            </p>
                         </div>
                     </div>
@@ -30,10 +30,10 @@
                     <!-- start experience section-->
                     <div class="timeline">
                         <div class="icon">
-                            <strong class="position-absolute mt-2 font-weight-bold">02</strong>
+                            <h4 class="position-absolute text-light mt-2 font-weight-bold">02</h4>
                         </div>
                         <div class="date-content">
-                            <img height="300" class="ml-5" src="assets/images/ilistrator/consultant.png" alt="">
+                            <img height="300" class="ml-5" src="assets/images/ilistrator/educate.webp" alt="">
                         </div>
                         <div class="timeline-content">
                             <h5 class="title">Danışmanlık ve Eğitim</h5>
@@ -46,14 +46,14 @@
                     <!-- start experience section-->
                     <div class="timeline">
                         <div class="icon">
-                            <strong class="position-absolute mt-2 font-weight-bold">03</strong>
+                            <h4 class="position-absolute text-light mt-2 font-weight-bold">03</h4>
                         </div>
                         <div class="date-content">
                             <img class="ml-5 mr-5" height="250" src="assets/images/ilistrator/net.webp" alt="">
                         </div>
                         <div class="timeline-content">
                             <h5 class="title">Network </h5>
-                            <p class="description">
+                            <p class="description1">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum                            </p>
                         </div>
                     </div>

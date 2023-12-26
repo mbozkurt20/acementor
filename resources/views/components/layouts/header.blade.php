@@ -17,17 +17,17 @@
                             <ul id="nav" class="navbar-nav ml-auto">
                                 <li class="nav-item">
                                     <a class="page-scroll" href="/services">
-                                        <small class="text-white">Hizmetlerimiz</small>
+                                        <span class="text-grey">Hizmetlerimiz</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="page-scroll" href="/teams">
-                                        <small class="text-white">Ekibimiz</small>
+                                        <span class="text-grey">Ekibimiz</span>
                                     </a>
                                 </li>
                                 <li class="nav-item active">
                                     <a class="page-scroll" href="/contract">
-                                        <small class="text-white">Bize Ulaşın</small>
+                                        <span class="text-grey">Bize Ulaşın</span>
                                     </a>
                                 </li>
                             </ul>

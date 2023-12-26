@@ -5,6 +5,28 @@ $(function () {
     "use strict";
 
     //===== Prealoder
+    document.addEventListener("mousemove", function(event) {
+        // Yeni bir div öğesi oluşturun ve stili belirtin
+        var cursor = document.createElement("div");
+        cursor.style.width = "1px";
+        cursor.style.height = "2px";
+        cursor.style.borderRadius = "50%";
+        cursor.style.background = "linear-gradient(to right, #1D64EF, #E0507A)"; // Neon yeşili gibi parlak renkler kullanabilirsiniz
+        cursor.style.boxShadow = "0 0 10px rgba(0, 255, 0, 0.8), 0 0 20px rgba(0, 255, 0, 0.6), 0 0 30px rgba(0, 255, 0, 0.4)"; // Hafif bir neon glow efekti
+        cursor.style.border = "2px solid rgba(255, 255, 255, 0.5)"; // Beyaz bir kenarlık
+        cursor.style.position = "absolute";
+        cursor.style.pointerEvents = "none"; // Bu, imlecin diğer öğelerle etkileşimde bulunmamasını sağlar
+
+        // Oluşturulan div'i sayfaya ekleyin
+        document.body.appendChild(cursor);
+
+        // Mouse hareketi olayını dinleyin
+        document.addEventListener("mousemove", function (event) {
+            // Mouse imleci konumunu güncelle
+            cursor.style.left = event.pageX + "px";
+            cursor.style.top = event.pageY + "px";
+        });
+    });
 
     $(window).on('load', function (event) {
         $('.preloader').delay(500).fadeOut(500);

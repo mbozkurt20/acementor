@@ -1,17 +1,19 @@
 <footer id="footer" class="footer-area pt-120">
+   <div class="line"></div>
+
     <div class="container">
-        <div class="subscribe-area wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div class=" wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="subscribe-content mt-45">
-                        <h2 class="subscribe-title">Subscribe Our Newsletter <span>get reguler updates</span></h2>
+                        <h6 class="text-white">Subscribe Our Newsletter <span>get reguler updates</span></h6>
+                        <p class="text-grey">Join 70,000+ builders and stay up to date with our latest updates and news.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="subscribe-form mt-50">
                         <form action="#">
                             <input type="text" placeholder="Enter eamil">
-                            <button class="main-btn">Subscribe</button>
                         </form>
                     </div>
                 </div>
@@ -108,4 +110,12 @@
         </div> <!-- footer copyright -->
     </div> <!-- container -->
     <div id="particles-2"></div>
+
+    <style>
+        .line{
+            width: 100%; /* Çizgi uzunluğu, isteğe bağlı */
+            height: 0.3px; /* Çizgi kalınlığı, isteğe bağlı */
+            background: linear-gradient(to right, #1D64EF, #E0507A);
+        }
+    </style>
 </footer>
