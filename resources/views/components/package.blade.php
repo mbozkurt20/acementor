@@ -9,28 +9,28 @@
             </div>
         </div> <!-- row -->
         <div class="row" data-wow-duration="1s" data-wow-delay="0.8s">
-            <div class="col-5">
-                <div class="ty border border-yellow text-center p-3">
-                   <div class="text-center">
-                       <h4 class="text-white mt-4">Temel Yıldız</h4>
-                       <p class="mt-4 px-4 text-white">Amazon Online Arbitrage <br> Uzmanlık Rehberi</p>
-                   </div>
+{{--            <div class="col-5">--}}
+{{--                <div class="ty border border-yellow text-center p-3">--}}
+{{--                   <div class="text-center">--}}
+{{--                       <h4 class="text-white mt-4">Temel Yıldız</h4>--}}
+{{--                       <p class="mt-4 px-4 text-white">Amazon Online Arbitrage <br> Uzmanlık Rehberi</p>--}}
+{{--                   </div>--}}
 
-                    <h3 class="text-yellow text-center m-4"> <del class="text-grey">£3249</del> £2499</h3>
+{{--                    <h3 class="text-yellow text-center m-4"> <del class="text-grey">£3249</del> £2499</h3>--}}
 
-                    <div class="p-4 text-center">
-                        <p class="text-grey font-weight-bold mb-5"><i class="mr-3 float-left fa fa-check text-yellow"></i> A'dan Z'ye Online Arbitrage Eğitimi</p>
-                        <p class="text-grey font-weight-bold mb-5"><i class="mr-3 float-left fa fa-check text-yellow"></i> Şirket Kuruluş ve Belge Beyannameleri</p>
-                        <p class="text-grey font-weight-bold mb-5"><i class="mr-3 float-left fa fa-check text-yellow"></i> Amazon ve Banka Hesap Açılışları</p>
-                        <p class="text-grey font-weight-bold mb-5"><i class="mr-3 float-left fa fa-check text-yellow"></i> VIP Gruplarda Canlı Destek ve Süresiz Üyelik Ayrıcalığı</p>
-                        <p class="text-grey font-weight-bold mb-5"><i class="mr-3 float-left fa fa-check text-yellow"></i> Hafta içi 12:00-20:00 Arasında İstediğin Vakite Uygun Birebir Eğitim</p>
-                    </div>
+{{--                    <div class="p-4 text-center">--}}
+{{--                        <p class="text-grey font-weight-bold mb-5"><i class="mr-3 float-left fa fa-check text-yellow"></i> A'dan Z'ye Online Arbitrage Eğitimi</p>--}}
+{{--                        <p class="text-grey font-weight-bold mb-5"><i class="mr-3 float-left fa fa-check text-yellow"></i> Şirket Kuruluş ve Belge Beyannameleri</p>--}}
+{{--                        <p class="text-grey font-weight-bold mb-5"><i class="mr-3 float-left fa fa-check text-yellow"></i> Amazon ve Banka Hesap Açılışları</p>--}}
+{{--                        <p class="text-grey font-weight-bold mb-5"><i class="mr-3 float-left fa fa-check text-yellow"></i> VIP Gruplarda Canlı Destek ve Süresiz Üyelik Ayrıcalığı</p>--}}
+{{--                        <p class="text-grey font-weight-bold mb-5"><i class="mr-3 float-left fa fa-check text-yellow"></i> Hafta içi 12:00-20:00 Arasında İstediğin Vakite Uygun Birebir Eğitim</p>--}}
+{{--                    </div>--}}
 
-                    <button class="p-2 px-5 text-centert rounded btn-hover-yellow"><strong>Satın Al</strong></button>
-                </div>
-            </div>
-            <div class="col-1"></div>
-            <div class="col-5">
+{{--                    <button class="p-2 px-5 text-centert rounded btn-hover-yellow"><strong>Satın Al</strong></button>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+            <div class="col-3"></div>
+            <div class="col-6">
                 <div class="ty border border-yellow text-center p-3">
                    <div class="text-center">
                        <h4 class="text-white mt-4">Evrim Aşaması</h4>
@@ -50,6 +50,7 @@
                     <button class="p-2 px-5 text-centert rounded btn-hover-yellow"><strong>Satın Al</strong></button>
                 </div>
             </div>
+            <div class="col-3"></div>
         </div> <!-- row -->
     </div> <!-- container -->
 </section>
@@ -60,7 +61,7 @@
     }
 
     .ty:hover {
-        rotate: 1deg;
+        rotate: 0deg;
         box-shadow: 1px 1px 20px 10px #E0507A;
         transform: scale(1.1); /* 1.1 kat büyüt */
         transition: transform 0.9s ease;

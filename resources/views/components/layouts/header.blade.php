@@ -16,7 +16,7 @@
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                             <ul id="nav" class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a class="page-scroll" href="/services">
+                                    <a onclick="scrollToSection('features')" class="page-scroll">
                                         <span class="text-grey">Hizmetlerimiz</span>
                                     </a>
                                 </li>
@@ -26,7 +26,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item active">
-                                    <a class="page-scroll" href="/contract">
+                                    <a class="page-scroll"  onclick="scrollToSection('footer')">
                                         <span class="text-grey">Bize Ulaşın</span>
                                     </a>
                                 </li>
@@ -38,5 +38,16 @@
         </div> <!-- container -->
     </div> <!-- navbar area -->
 
+    <script>
+        function scrollToSection(sectionId) {
+            var element = document.getElementById(sectionId);
 
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    </script>
 </header>

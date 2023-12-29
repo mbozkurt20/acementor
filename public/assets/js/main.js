@@ -47,7 +47,44 @@ $(function () {
     });
 
 
+    // Başlangıç tarihi (örneğin, şu anki tarih)
+    const startDate = new Date();
 
+    // Başlangıç fiyatı
+    let initialPrice = 10000;
+
+    function calculateEarnings() {
+        // Geçen süreyi hesapla (milisaniye cinsinden)
+        const currentTime = new Date();
+        const elapsedTime = currentTime - startDate;
+
+        // Her geçen saniye için eklenen miktar
+        const earningsPerSecond = 0.01;
+
+        // Kazanç hesapla
+        const earnings = initialPrice + elapsedTime * earningsPerSecond;
+
+        // Kazancı formatlı bir şekilde döndür
+        return formatPrice(earnings);
+    }
+
+    function formatPrice(price) {
+        // Price'ı istediğiniz formata göre düzenle (örneğin, virgülle ayrılmış binlikler)
+        return price.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    }
+
+    // Her saniye kazancı hesapla ve HTML sayfasında göster
+    setInterval(() => {
+        const currentEarnings = calculateEarnings();
+        const earningsDisplay = document.getElementById('earningsDisplay');
+        const earningsDisplayUp = document.getElementById('earningsDisplayUp');
+        earningsDisplay.textContent = `$${currentEarnings}`;
+
+        // Yeşil rengin yanıp sönme efekti
+        earningsDisplay.style.color = (earningsDisplay.style.color === 'greenyellow') ? 'white' : 'greenyellow';
+        earningsDisplayUp.style.color = (earningsDisplayUp.style.color === 'greenyellow') ? 'white' : 'greenyellow';
+        earningsDisplayUp.style.display = earningsDisplayUp.style.color === 'white' ? 'none' : 'block'
+    }, 7000);
     //===== Section Menu Active
 
     var scrollLink = $('.page-scroll');

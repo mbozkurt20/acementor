@@ -45,17 +45,27 @@
             </div>
             <div class="col-3">
                 <div class="float-left">
-                    <div class="size-md text-white" id="counter">0</div>
-                    <span class="text-grey">Aktif Users</span>
+                    <div class="size-sm text-white" id="counter">0</div>
+                    <span class="text-grey">Active Users</span>
                 </div>
 
                 <div class="float-right">
-                    <div class="size-md text-white" id="dailyAmount">Loading...</div>
-                    <span class="text-grey">Kazanç</span>
+                   <div class="row">
+                       <i id="earningsDisplayUp" class="fa fa-arrow-up mx-2 mt-2"></i>
+                       <div class="size-sm" id="earningsDisplay">$10.000</div>
+                   </div>
+                    <span class="text-grey">Earning</span>
                 </div>
-
             </div>
-
         </div> <!-- container -->
     </div>
+
+    <style>
+        #earningsDisplay {
+            color: greenyellow;
+        }
+        #earningsDisplayUp {
+            color: greenyellow;
+        }
+    </style>
 </section>
