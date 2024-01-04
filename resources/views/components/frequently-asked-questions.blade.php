@@ -10,10 +10,10 @@
         </div> <!-- row -->
         <div id="accordion">
             @foreach($frequents as $frequent)
-                <div class="card mb-4 p-3 rounded-pill" >
+                <div class="card mb-4 p-3 rounded-pill" data-toggle="collapse" data-target="#collapseOne-{{$frequent['id']}}" aria-expanded="true" aria-controls="collapseOne">
                     <div class="p-2 ml-5" id="headingOne-{{$frequent['id']}}">
                         <h5 class="mb-0">
-                            <a class="text-dark" href="#" data-toggle="collapse" data-target="#collapseOne-{{$frequent['id']}}" aria-expanded="true" aria-controls="collapseOne">
+                            <a class="text-dark" href="#" >
                               <span style="font-family: Apple">  {{$frequent['title']}}</span>
                             </a>
                         </h5>

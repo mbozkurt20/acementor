@@ -17,7 +17,7 @@
                             <h4 class="position-absolute text-light mt-2 font-weight-bold">01</h4>
                         </div>
                         <div class="date-content">
-                            <img height="350" src="assets/images/ilistrator/tax3.webp" alt="">
+                            <img class="img-fluid" src="assets/images/ilistrator/mali-1.webp" alt="">
                         </div>
                         <div class="timeline-content">
                             <h5 class="title">Şirket ve Muhasebe</h5>
@@ -33,7 +33,7 @@
                             <h4 class="position-absolute text-light mt-2 font-weight-bold">02</h4>
                         </div>
                         <div class="date-content">
-                            <img height="300" class="ml-5" src="assets/images/ilistrator/educate.webp" alt="">
+                            <img class="img-fluid" src="assets/images/ilistrator/danismanlik.png" alt="">
                         </div>
                         <div class="timeline-content">
                             <h5 class="title">Danışmanlık ve Eğitim</h5>
@@ -49,7 +49,7 @@
                             <h4 class="position-absolute text-light mt-2 font-weight-bold">03</h4>
                         </div>
                         <div class="date-content">
-                            <img class="ml-5 mr-5" height="250" src="assets/images/ilistrator/net.webp" alt="">
+                            <img class="img-fluid" src="assets/images/ilistrator/network.webp" alt="">
                         </div>
                         <div class="timeline-content">
                             <h5 class="title">Network </h5>

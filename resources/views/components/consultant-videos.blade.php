@@ -111,26 +111,27 @@
         </div>
 
     </div> <!-- container -->
-
-    <style>
-        .video-content {
-            perspective: 1000px;
-            transition: transform 0.5s;
-        }
-
-        .video-wrapper {
-            position: relative;
-            transform-style: preserve-3d;
-            transition: transform 0.5s;
-        }
-
-        .video-content:hover .video-wrapper {
-            transform: rotateY(20deg);
-        }
-
-        /* Add any additional styling as needed */
-
-    </style>
 </section>
+
+
+<style>
+    .video-content {
+        perspective: 1000px;
+        transition: transform 0.5s;
+    }
+
+    .video-wrapper {
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+    }
+
+    .video-content:hover .video-wrapper {
+        transform: rotateY(20deg);
+    }
+
+    /* Add any additional styling as needed */
+
+</style>
 
 

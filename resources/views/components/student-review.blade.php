@@ -100,3 +100,16 @@
     </div> <!-- container -->
 </section>
 
+<style>
+    @media (max-width: 767px) {
+        .testimonial-active {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .col-lg-4 {
+            width: 100%; /* Make each testimonial take the full width */
+            margin-bottom: 20px; /* Add some space between testimonials */
+        }
+    }
+</style>

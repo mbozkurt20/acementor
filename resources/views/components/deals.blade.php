@@ -23,8 +23,12 @@
     </div> <!-- container -->
 
     <style>
-        .single-logo:hover{
-            box-shadow: 1px 2px 3px 4px white;;
+        .single-logo {
+            transition: box-shadow 0.3s ease, border-radius 0.3s ease;
+        }
+
+        .single-logo:hover {
+            box-shadow: 1px 2px 3px 4px white;
             border-radius: 20px;
         }
     </style>

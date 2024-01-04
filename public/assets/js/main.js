@@ -103,6 +103,75 @@ $(function () {
         });
     });
 
+    function updateTimestamp() {
+        const timestampContainer = document.getElementById('timestamp-container');
+        const startTimestamp = 3000; // Starting timestamp
+        const currentTimestamp = Math.floor((Date.now() / 10000)); // Current timestamp in seconds
+        const duration = 3000; // Animation duration in milliseconds
+
+        animateAndFormatTimestamp(timestampContainer, startTimestamp, currentTimestamp, duration);
+    }
+
+    function animateAndFormatTimestamp(container, start, end, duration) {
+        const frameDuration = 1000 / 60;
+        const totalFrames = Math.ceil(duration / frameDuration);
+        const increment = (end - start) / totalFrames;
+
+        let currentFrame = 0;
+        let currentValue = start;
+
+        function updateTimestamp() {
+            currentFrame++;
+            currentValue += increment;
+
+            const formattedTimestamp = numberWithCommas(Math.floor(currentValue));
+            const randomColor = getRandomColor();
+
+            container.innerHTML = `<span style="color: ${randomColor};">$ ${formattedTimestamp}</span>`;
+
+            if (currentFrame < totalFrames) {
+                requestAnimationFrame(updateTimestamp);
+            }
+        }
+
+        updateTimestamp();
+    }
+
+    function updateTimestamp1() {
+
+        var timestampContainer = document.getElementById('timestamp-container');
+        const currentTimestamp = Math.floor((Date.now() / 10000)); // Current timestamp in seconds
+
+        // Rastgele renk oluştur
+        var randomColor = getRandomColor();
+
+        // Zaman damgasını number formatında düzenle
+        var formattedTimestamp = numberWithCommas(currentTimestamp);
+
+        // Renkli ve düzenlenmiş zaman damgasını ekle
+        timestampContainer.innerHTML = `<span style="color: ${randomColor};">$ ${formattedTimestamp}</span>`;
+    }
+
+    window.addEventListener('load', updateTimestamp);
+
+    setInterval(updateTimestamp1, 6000);
+
+// Rastgele renk oluşturma fonksiyonu
+    function getRandomColor() {
+        var random = Math.random();
+        if (random < 0.5) {
+            // Beyaz renk üret
+            return '#FFFFFF';
+        } else {
+            // Yeşil renk üret
+            return '#00FF00';
+        }
+    }
+
+// Number formatında düzenleme fonksiyonu
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
 
     //===== close navbar-collapse when a  clicked
 
@@ -476,26 +545,10 @@ function animateAndFormatCounter(targetNumber, duration) {
     updateCounter();
 }
 
-const targetNumber = 2000000; // 2M
+const targetNumber = 750000; // 2M
 const animationDuration = 3000;
 
 animateAndFormatCounter(targetNumber, animationDuration);
-
-// daily amount
-function getDailyAmount(timestamp) {
-    const dailyIncrement = 10; // Her gün eklenen para miktarı
-
-    const startDate = new Date('2023-01-05'); // Başlangıç tarihi
-    const currentDate = new Date(timestamp);
-
-    const daysPassed = Math.floor((currentDate) / (24 * 60 * 60 * 1000)) % 1000;
-    const dailyAmount = daysPassed * dailyIncrement;
-
-    console.log({dailyAmount:dailyAmount})
-    console.log({timestamp:timestamp})
-    console.log(dailyAmount)
-    return dailyAmount;
-}
 
 function animateDailyAmount(targetAmount, duration) {
     const dailyAmountElement = document.getElementById('dailyAmount');
